@@ -16,9 +16,9 @@ const geistSans = Geist({
 })
 
 export const metadata: Metadata = {
-  title: 'Reflexiones — On Time',
+  title: 'El Container de Naza',
   description:
-    'A quiet, cinematic collection of reflections on the nature of Time. The secret destination at the end of the puzzle.',
+    'Un repositorio personal de pensamientos, ensayos y reflexiones. Un espacio oscuro, minimalista y silencioso para leer.',
   generator: 'v0.app',
   icons: {
     icon: [

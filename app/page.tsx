@@ -1,19 +1,20 @@
-import { Hero } from "@/components/hero"
-import { ReflectionGrid } from "@/components/reflection-grid"
-import { SiteFooter } from "@/components/site-footer"
+import { ReflectionVault } from "@/components/reflection-vault"
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-background">
-      <div
-        className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_50%_0%,oklch(0.78_0.09_75/0.06),transparent_55%)]"
-        aria-hidden="true"
-      />
-      <div className="relative">
-        <Hero />
-        <ReflectionGrid />
-        <SiteFooter />
-      </div>
+    <main className="mx-auto min-h-dvh w-full max-w-lg px-5 pb-16 pt-12">
+      <header className="mb-10 animate-fade-in">
+        <div className="mb-4 h-px w-10 bg-accent/60" aria-hidden="true" />
+        <h1 className="font-serif text-3xl leading-tight text-foreground text-balance sm:text-4xl">
+          El Container de Naza
+        </h1>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
+          Un repositorio de pensamientos, ensayos y reflexiones. Toca cualquiera
+          para leer en silencio.
+        </p>
+      </header>
+
+      <ReflectionVault />
     </main>
   )
 }
