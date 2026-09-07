@@ -1,11 +1,14 @@
 import type { LucideIcon } from "lucide-react"
+import { CalendarCheck } from 'lucide-react';
+
 import {
-  Clock,
-  Hourglass,
+    Clock,
+   Hourglass,
   Feather,
   MoonStar,
   Flame,
   Compass,
+  Cpu,
 } from "lucide-react"
 
 /** Name of a supported icon. Add new keys to `iconMap` below to extend. */
@@ -16,6 +19,8 @@ export type ReflectionIcon =
   | "moon"
   | "flame"
   | "compass"
+  | "calendar"
+  | "cpu"
 
 export interface Reflection {
   id: string
@@ -34,6 +39,8 @@ export const iconMap: Record<ReflectionIcon, LucideIcon> = {
   moon: MoonStar,
   flame: Flame,
   compass: Compass,
+  calendar: CalendarCheck,
+  cpu: Cpu,
 }
 
 /**
@@ -41,9 +48,22 @@ export const iconMap: Record<ReflectionIcon, LucideIcon> = {
  * reflection — the UI maps over it automatically.
  */
 export const reflections: Reflection[] = [
-  
   {
-  id: "01",
+    id: "01",
+    title: "Proxima",
+    excerpt:
+      "Proximamente...",
+    fullContent:
+      "Espero poder traer otra reflexion pronto",
+    date: "En espera",
+    icon: "hourglass",
+  },
+
+
+
+
+  {
+  id: "02",
   title: "El Tiempo",
   excerpt: "El tiempo es una apuesta constante en la que todos jugamos creyendo que tenemos la ventaja, hasta que nos damos cuenta de que nos quedamos sin fichas.",
   fullContent: `Tengo que morir, aunque nací para vivir.
@@ -74,14 +94,55 @@ Recordá que tenemos que morir.`,
   date: "Septiembre 7, 2026",
   icon: "hourglass",
 },
+
+
+
 {
-    id: "02",
-    title: "Proxima",
-    excerpt:
-      "Proximamente...",
-    fullContent:
-      "Espero poder traer otra reflexion pronto",
-    date: "En espera",
-    icon: "hourglass",
-  },
+  id: "03",
+  title: "¿Mi meta?",
+  excerpt: "¿Cómo sé que mi nuevo entorno no es más que otro hormiguero puesto ahí para que viva creyendo que tengo el control?",
+  fullContent: `¿Hasta dónde puede llegar la influencia del entorno? ¿Qué tanto pudo cambiar, y qué tanto me cambió mi entorno para que yo sea quien soy en este momento?
+
+De chico me crié con todo mi entorno remarcándome que tenía una facilidad con todo lo relacionado a la tecnología. Viéndolo hoy en día, puedo decir que sí, me generaba curiosidad todo lo electrónico, pero en gran parte porque en mi familia era complicado poder permitirnos tener muchas cosas de ese estilo. Eso, creo, fue otro factor más que influyó en que mi vida (al menos lo que tengo planificado) se decantara en aprender y pulir mis habilidades en el ámbito de la tecnología.
+
+Otra cosa que creo que influyó muchísimo para que mi yo de hace unos diez años atrás eligiera este rubro fue la presión. La presión de saber que cuando alguien de mi entorno no supiera algo, iba a estar yo para poder resolverlo.
+
+Si lo pensamos de esta manera, el hecho de que nuestro entorno nos influya tanto a la hora de elegir lo que nos gusta, me hace sentir igual a una hormiga dentro de un hormiguero artificial. Ella no sabe por qué está ahí, no sabe que realmente no es su hábitat, y va a morir sin comprender. 
+
+Puedo cambiar mi entorno, eso sí me va a hacer diferente, pero ¿hasta dónde puedo cambiar ese entorno? ¿Cómo sé que mi nuevo entorno no es más que otro hormiguero puesto ahí para que viva creyendo que tengo el control de cambiar? ¿Qué es peor, querer salir del hormiguero o no saber siquiera que existe uno?
+
+Lo que más me deja pensando es: ¿hasta qué punto tengo realmente libertad de pensamiento y de imaginación? Un ejemplo para que el lector comprenda a lo que me refiero: no somos capaces de imaginarnos un color completamente nuevo, solo derivados de los que ya conocemos. ¿Por qué, si tenemos la capacidad de pensar que existen más colores, no somos capaces de imaginarlos?`,
+  date: "Agosto 11, 2026",
+  icon: "cpu",
+},
+
+
+
+
+
+{
+  id: "04",
+  title: "Un día más",
+  excerpt: "Siento que más que 'un día más', fue 'un día menos'. Un día menos para decirles a las personas que me importan que las quiero.",
+  fullContent: `Hoy no cumplí con mis expectativas. Volví a mentirme, haciéndome el que estudiaba mientras me terminaba distrayendo intencionalmente, volviendo a patear todo para último momento. No sé por qué me miento tanto; sé lo que tengo que hacer pero lo pateo. Como si al no tener las horas contadas, no me importara tanto. Me gusta saber que me fallo y poder admitirlo; lo peor para mí sería creerme las excusas que me invento.
+
+Siempre funcioné así, como si mi mente jugara con el tiempo. Dejo todo para último momento y luego, el día del parcial, me arrepiento y me reprocho a mí mismo. Prometo que no lo voy a hacer más, que para la próxima me voy a poner las pilas. El tema es que a veces no hay "próxima". 
+
+No puedo evitar pensar que esto mismo le pasa a tanta gente, pero en cosas más duras de la vida. Gente que deja para la "próxima" juntarse con amigos, gente que deja para la "próxima" juntarse a comer algo con los viejos. Gente que deja para mañana decirle lo mucho que quieren a ese ser querido que quizás, sin saberlo, su última chance de decírselo era hoy. El ser humano cree muchas veces que tiene la vida comprada, que siempre va a tener otra oportunidad para hacer eso que está pateando desde quién sabe cuándo. 
+
+En estos momentos, cuando todo está pendiente de una pantalla, es cuando más quiero estar junto a mi familia, en casa. Ahí es cuando me gustaría poder recuperar todos esos días intrascendentes que viví con ellos. Quiero tomar unos mates con mi mamá, molestarme con ella porque no me lo devuelve más. Es feo pensar que, sin saberlo, un día va a ser el último día que voy a tomar mates con ella... y que ese día pudo ya haber ocurrido y aún no lo sé. Solo espero que el día que pase, no me arrepienta de no haberlo hecho.
+
+Recuerdo un día preguntarle de qué se arrepentía, y justamente me contó que siempre piensa en las veces que no tomó unos mates con su madre. Ella solo tomaba amargo y, en ese momento, mi mamá solo tomaba dulce.
+
+Hoy considero que fue un buen día; no ocurrió nada relevante, pero pensándolo bien, siento que más que "un día más", fue "un día menos". Un día menos para decirles a las personas que me importan que las quiero. Que quiero tomar unos mates con mi mamá y no siempre solo, que quiero ayudarle a hacer alguno de sus inventos a mi viejo, y que quiero poder charlar de lo que sea con Ángel y reírnos.
+
+Hoy es un día menos en el que no pude, por la distancia, estar sentado comiendo todos juntos en familia, con mi viejo mirando las noticias a fondo en la tele. Sé que estar acá es lo mejor para mí, pero es tiempo que invierto en mi futuro y que me quito de estar junto a ellos. Solo espero aprovechar los días que me quedan con vida y no arrepentirme de muchas más cosas de las que ya me arrepiento.
+
+Este día seguro va a ser olvidado por mi mente pero, paradójicamente, escribir sobre esto va a hacer que, mientras esté con vida, pueda recordarlo. Días como este me hacen recordar lo rápido que se pasa todo y lo mucho que me cuesta vivir.`,
+  date: "Julio 8, 2026",
+  icon: "calendar",
+},
+
+
+
 ]
