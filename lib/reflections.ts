@@ -1,6 +1,7 @@
 import type { LucideIcon } from "lucide-react"
 import { CalendarCheck } from 'lucide-react';
 
+
 import {
     Clock,
    Hourglass,
@@ -9,6 +10,7 @@ import {
   Flame,
   Compass,
   Cpu,
+  Flower2,
 } from "lucide-react"
 
 /** Name of a supported icon. Add new keys to `iconMap` below to extend. */
@@ -21,7 +23,7 @@ export type ReflectionIcon =
   | "compass"
   | "calendar"
   | "cpu"
-
+  | "flower"
 export interface Reflection {
   id: string
   title: string
@@ -41,6 +43,7 @@ export const iconMap: Record<ReflectionIcon, LucideIcon> = {
   compass: Compass,
   calendar: CalendarCheck,
   cpu: Cpu,
+  flower: Flower2,
 }
 
 /**
@@ -63,7 +66,37 @@ export const reflections: Reflection[] = [
 
 
   {
-  id: "02",
+    id: "02",
+    title: "Flores de plástico",
+    excerpt:
+      "Sobre cómo dejé de forzar escenas de película y entendí que un café en un día de lluvia vale más que cualquier flor por compromiso.",
+    fullContent:
+      `Si por algo me caracterizo es por ser humano; tengo todas las emociones en su justa medida y los deseos siempre presentes como una meta que algún día voy a cumplir. Me encanta escribir, mas no me considero una persona buena en eso. No me frena saber que soy realmente malo en algo, me da curiosidad por saber qué tan bueno puedo llegar a ser.
+
+Algunas de las cosas que nunca había tenido el privilegio de vivir era estar de novio con alguien. Todos mis intentos por estar con personas siempre terminaban mal. Mis intentos eran con gente con la que realmente no debía estar, o con máscaras que sabía que iban a durar un tiempo y que luego la realidad me golpearía, sabiendo que no era lo que realmente buscaba para mí. A todo esto, prefería mantenerme en la falsa ilusión de estar construyendo algo con alguien por lo dulce del momento, callando a mi mente que me estaba diciendo que mantener eso me estaba imposibilitando el hecho de realmente conseguirlo. Muy similar a lo que nos pasa cuando despertamos de un sueño muy lindo y queremos volver a soñarlo, sabiendo que es falso pero que nos gusta pensarlo.
+
+Por otro lado, siempre admiré a una pareja que cursaba en el mismo instituto al cual iba. Si bien no era la única pareja que me gustaba ver, era la que más me gustaba porque siempre la veía. Sigo admitiendo que me parece hermoso lo que tienen; mucho tiempo quería tener eso mismo con personas que quizás no eran las indicadas, y prefería mantenerme en una relación más tóxica para poder sentir lo que eran esos destellos de dulzura y cariño. En fin, no interesa lo que me pasaba con esa persona, lo que quiero contar es que el ser humano siempre quiere tener lo que ve en los demás. Siempre aspiré a tener una relación como la de mis compañeros, con peleas y todo, porque es imposible siempre estar bien, pero sabiendo solucionarlas. Me parece una pareja que la verdad se diferencia de las demás por el hecho de no querer aparentar nada. Me gusta que cada uno tiene la libertad de ser quien es, que no necesiten subir una historia a Instagram el 21 con una flor amarilla para aparentar y que las demás personas vean su genial relación. Me gusta que la gente no necesite un día en particular para demostrar afecto, como lo puede ser un 14 de febrero; el cariño a alguien se demuestra en otras cosas y se hace en el día a día, con cosas aún más insignificantes que las demás personas no deben saber jamás. Cosas como hacer un desayuno para los dos, darle algo dulce, abrazarse, reírse de algo en concreto, jugar un mismo juego. Son cosas que me parecen menos vacías que una foto en IG.
+
+Esta pareja siempre fue lo que me hubiera encantado tener. Nunca había tenido una novia en ese momento, fantaseaba con algún día tenerla y poder comer junto con esa pareja algo, porque además de parecerme una linda pareja, me caían súper bien ambos. De esa relación comprendí que donde estaba no tenía nada que proyectar, el deseo era solo físico y no era nada genuino. Al hacerme a un costado de ese momento me propuse nunca más volver a meterme en algo así. Lo que vino después fue mucho mejor. Además de estar solo, sentía que podía volver a conocer a alguien con quien crear un vínculo como el de mis amigos, algo así de lindo, y poder cumplir todas las fantasías que tenía en mi mente, como lo era comer en un restaurante con alguien en invierno, dentro de un lugar cálido con luz cálida, comiendo algo caliente en la noche, viendo la luna y charlando de mil cosas.
+
+Querer forzar algo no es lo mejor, eso fue lo segundo que aprendí. Tras dejar una relación en la cual nunca pasaría a nada más serio, estuve un tiempo solo hasta que conocí a alguien que creía que sí era. Realmente creo que es una persona que vale la pena, quizás no conmigo, pero no me encontré a alguien vacío ni mucho menos. Simplemente no pudo ser porque decidí irme de ese lugar. Mirándolo más frío, fue algo muy bonito y corto que me sirvió para estar tranquilo conmigo mismo, sabiendo que sí puedo atraer a personas que valen la pena. Espero le vaya muy bien y consiga a alguien que valga la pena; por mi parte, volví a estar solo y tranquilo. Esa imagen de la pareja perfecta comiendo en un restaurante y compartiendo cosas volvía a parecer muy lejana.
+
+Paradójicamente, cuando dejé de buscar a alguien, apareció quien actualmente es mi novia. Es muy raro, pero no sé por qué cuando la vi me gustó y pensé que iba a ser mi novia a futuro. Obvio que no lo forcé, pero de vuelta volví a sentir esas ganas de tener una relación como la de mis amigos. Esta vez sí me transmitía confianza, a diferencia de mi primer intento, y además la tenía cerca y la notaba verdaderamente genuina. Pasamos mucho tiempo conociéndonos y pude cumplir con ella varios de mis deseos de estar con alguien. No lo sabe, pero me hizo pensar muchas cosas.
+
+De todos mis intentos de relaciones puedo rescatar algo bueno. La primera fue la que me enseñó que puedo ser muy tóxico si el ambiente lo es, y la parte linda de estar enamorado de alguien. Me demostró que hay cosas que no se pueden tolerar y que no hay que dejarlas pasar para poder mantener una relación sana; me demostró el peligro de perder tu tranquilidad por querer a alguien. Me hizo ser mucho más selectivo a la hora de elegir a alguien, eso se lo agradezco. Me gustaría pedirle perdón por también estar metido en esa toxicidad, no me gusta hacerme la víctima siendo que también estaba metido en ese mambo.
+
+De la segunda es quizás de la que menos puedo llegar a contar. Fue muy bonito estar con ella, pero no sabía si realmente era lo que quería o no. Me entretenía demasiado, me gustaba mucho charlar con ella. La quise conocer muy despacio para no caer en lo mismo que mi anterior relación; el tiempo era poco y, cuando le conté que no iba a vivir más por esa zona, siento que se enfrió todo. Me dejó lindos recuerdos pero no pudieron ser muchos por mi culpa. No sé qué hubiera pasado si el tiempo hubiera estado a nuestro favor, la verdad, solo puedo imaginar una realidad que no pasó. Me enseñó a aprovechar el tiempo de calidad con quien querés.
+
+Mi pareja actual me da tranquilidad total. Gracias a mi primer intento de relación pude conocer a alguien que creo realmente vale la pena, y gracias a mi segunda relación puedo decir que disfruto cada momento con mi pareja actual; el tiempo se me pasa volando con ella. Es re loco pensar que, sinceramente, ya siento que logré tener esa misma relación que la que veía en mis amigos. Me pone contento poder proyectar con ella, me gusta charlar demasiado, me gusta todo de sí. No siento que sea una relación vacía y mucho menos tóxica. Mi novia me demostró que lo que realmente tengo que valorar es tener el momento juntos y no la fantasía perfecta en un restaurante en la noche; lo que en verdad importa es poder estar con esa persona en ese lugar. Me demostró que ir hasta una cafetería un día de lluvia muy frío realmente puede ser hermoso. Son recuerditos que me gusta tener porque no me los imaginaba así, pero eso no significa que estoy decepcionado por no cumplir mis fantasías, sino que les dio un valor real al momento y no quiso solo replicar esa imagen mental que es imposible de replicar. Me demostró que no es necesaria una pareja perfecta como la que creía ver en mis amigos, sino una compañía que de verdad vale la pena. Sigo aprendiendo de ella muchas cosas hasta el día de hoy. Es simplemente una relación que se va construyendo, espero siga así. Quizás no pueda regalarle una flor amarilla, pero sí que me gustaría poder regalarle una transitada por esta tierra lo más linda posible.`,
+    date: "Septiembre 21, 2026",
+    icon: "flower",
+  },
+
+
+
+
+  {
+  id: "03",
   title: "El Tiempo",
   excerpt: "El tiempo es una apuesta constante en la que todos jugamos creyendo que tenemos la ventaja, hasta que nos damos cuenta de que nos quedamos sin fichas.",
   fullContent: `Tengo que morir, aunque nací para vivir.
@@ -98,7 +131,7 @@ Recordá que tenemos que morir.`,
 
 
 {
-  id: "03",
+  id: "04",
   title: "¿Mi meta?",
   excerpt: "¿Cómo sé que mi nuevo entorno no es más que otro hormiguero puesto ahí para que viva creyendo que tengo el control?",
   fullContent: `¿Hasta dónde puede llegar la influencia del entorno? ¿Qué tanto pudo cambiar, y qué tanto me cambió mi entorno para que yo sea quien soy en este momento?
@@ -121,7 +154,7 @@ Lo que más me deja pensando es: ¿hasta qué punto tengo realmente libertad de 
 
 
 {
-  id: "04",
+  id: "05",
   title: "Un día más",
   excerpt: "Siento que más que 'un día más', fue 'un día menos'. Un día menos para decirles a las personas que me importan que las quiero.",
   fullContent: `Hoy no cumplí con mis expectativas. Volví a mentirme, haciéndome el que estudiaba mientras me terminaba distrayendo intencionalmente, volviendo a patear todo para último momento. No sé por qué me miento tanto; sé lo que tengo que hacer pero lo pateo. Como si al no tener las horas contadas, no me importara tanto. Me gusta saber que me fallo y poder admitirlo; lo peor para mí sería creerme las excusas que me invento.
